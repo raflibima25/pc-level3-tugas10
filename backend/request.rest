@@ -1,0 +1,31 @@
+GET http://localhost:5000/produks
+
+###
+GET http://localhost:5000/produks/1
+
+
+###
+POST http://localhost:5000/produks
+Content-Type: application/json
+
+{
+    "nama_produk": "Kipas Angin",
+    "keterangan": "Menyejukan ruangan",
+    "harga": 100000,
+    "jumlah": 3
+}
+
+###
+PATCH http://localhost:5000/produks/1
+Content-Type: application/json
+
+{
+    "nama_produk": "AC",
+    "keterangan": "lebih menyejukan ruangan",
+    "harga": 300000,
+    "jumlah": 3
+}
+
+
+###
+DELETE http://localhost:5000/produks/1
